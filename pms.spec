@@ -1,11 +1,11 @@
 Summary:	Password Manager
 Summary(pl):	Zarz±dca hase³
 Name:		pms
-Version:	0.93
+Version:	0.93a
 Release:	1
 License:	GPL
 Group:		Applications/Console
-Source0:	http://www.8ung.at/easysoft/files/%{name}-%{version}.tar.gz
+Source0:	http://www.8ung.at/easysoft/files/%{name}-%{version}.tar.bz2
 Patch0:		%{name}.pld.patch
 URL:		http://www.8ung.at/easysoft/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -27,9 +27,9 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
 install %{name} $RPM_BUILD_ROOT%{_bindir}
-install %{name}_passwd/%{name}_passwd $RPM_BUILD_ROOT%{_bindir}/%{name}_passwd
+install %{name}_passwd/%{name}_passwd $RPM_BUILD_ROOT%{_bindir}
 
-gzip -9 NOTES README TODO BUGS
+gzip -9 NOTES README TODO BUGS CHANGES
 
 %clean
 rm -rf $RPM_BUILD_ROOT
