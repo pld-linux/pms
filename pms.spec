@@ -29,12 +29,10 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 install %{name} $RPM_BUILD_ROOT%{_bindir}
 install %{name}_passwd/%{name}_passwd $RPM_BUILD_ROOT%{_bindir}
 
-gzip -9 NOTES README TODO BUGS CHANGES
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
-%doc *.gz
+%doc NOTES README TODO BUGS CHANGES
