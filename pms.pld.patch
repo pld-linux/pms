@@ -1,0 +1,21 @@
+--- include/cdk/cdk.h~	Fri Jan 18 16:45:55 2002
++++ include/cdk/cdk.h	Sat Mar  9 17:54:01 2002
+@@ -43,7 +43,7 @@
+ #ifdef HAVE_XCURSES
+ #include <xcurses.h>
+ #elif defined(HAVE_NCURSES_H)
+-#include <ncurses.h>
++#include <ncurses/ncurses.h>
+ #else
+ #include <curses.h>
+ #endif
+--- include/cdk/cdk_config.h~	Fri Jan 18 16:45:55 2002
++++ include/cdk/cdk_config.h	Sat Mar  9 17:53:43 2002
+@@ -19,6 +19,7 @@
+ #define HAVE_LSTAT 1
+ #define HAVE_MKTIME 1
+ #define HAVE_MVWIN 1
++#define HAVE_NCURSES_H 1
+ #define HAVE_START_COLOR 1
+ #define HAVE_STRDUP 1
+ #define HAVE_STRERROR 1
