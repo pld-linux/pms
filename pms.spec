@@ -1,5 +1,5 @@
 Summary:	Password Manager
-Summary(pl):	Zarz±dca hase³
+Summary(pl.UTF-8):   ZarzÄ…dca haseÅ‚
 Name:		pms
 Version:	0.93a
 Release:	1
@@ -14,8 +14,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Console program for private password management.
 
-%description -l pl
-Konsolowy program do zarz±dzania prywatn± baz± hase³.
+%description -l pl.UTF-8
+Konsolowy program do zarzÄ…dzania prywatnÄ… bazÄ… haseÅ‚.
 
 %prep
 %setup -q
