@@ -1,5 +1,5 @@
 Summary:	Password Manager
-Summary(pl.UTF-8):   Zarządca haseł
+Summary(pl.UTF-8):	Zarządca haseł
 Name:		pms
 Version:	0.93a
 Release:	1
