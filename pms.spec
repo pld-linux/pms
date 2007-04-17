@@ -5,10 +5,11 @@ Version:	0.93a
 Release:	1
 License:	GPL
 Group:		Applications/Console
-Source0:	http://www.8ung.at/easysoft/files/%{name}-%{version}.tar.bz2
+#Source0:	http://www.8ung.at/easysoft/files/%{name}-%{version}.tar.bz2
+Source0:	%{name}-%{version}.tar.bz2
 # Source0-md5:	c1e069bd29d9528fbccce4e0f9a15649
 Patch0:		%{name}.pld.patch
-URL:		http://www.8ung.at/easysoft/
+#URL:		http://www.8ung.at/easysoft/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
